@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
 
             $table->string('azienda', 20);
-            $table->string('stazione_di_partenza', 20);
-            $table->string('stazione_di_arrivo', 20);
-            $table->string('orario_di_partenza', 5);
-            $table->string('orario_di_arrivo', 5);
+            $table->string('stazione_di_partenza', 100);
+            $table->string('stazione_di_arrivo', 100);
+            $table->string('orario_di_partenza', 10);
+            $table->string('orario_di_arrivo', 10);
             $table->integer('codice_Treno');
             $table->integer('numero_Carrozze')->nullable();
             $table->tinyInteger('in_orario')->default(1);
